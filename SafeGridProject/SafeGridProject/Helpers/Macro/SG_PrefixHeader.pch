@@ -1,0 +1,36 @@
+//
+//  BJOP_PrefixHeader.pch
+//  BeijingOpenUniversity
+//
+//  Created by zhongda on 2018/11/8.
+//  Copyright © 2018 zhongdayingcai. All rights reserved.
+//
+
+#ifndef BJOP_PrefixHeader_pch
+#define BJOP_PrefixHeader_pch
+
+// Include any system framework and library headers here that should be included in all compilation units.
+// You will also need to set the Prefix Header build setting of one or more of your targets to reference this file.
+@import UIKit;
+@import SDWebImage;
+
+
+#import "GlobalMacro.h"
+#import "UIMacro.h"
+#import "WeakAndStrongDefine.h"
+#import "UIButton+ImageTitleSpacing.h"  //调节按钮中图片与文字位置
+#import "CommonTools.h"
+#import "UITool.h"
+#import "NotificationConstant.h"
+#import "ZYCArchiveHelper.h"
+#import <WebKit/WKWebView.h>
+#import "SGKeyDefine.h"
+#import "UITextView+ZWPlaceHolder.h"
+#import <MJExtension/MJExtension.h>
+#import "UIView+ZYCExtension.h"
+#import "UIView+ZYCFoundation.h"
+#import "NSString+ZYCExtension.h"
+#import "UIButton+EnlargeEdge.h"
+#import "SGUserDAO.h"
+
+#endif /* BJOP_PrefixHeader_pch */

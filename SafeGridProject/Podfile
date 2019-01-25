@@ -1,0 +1,20 @@
+platform :ios,'8.0'
+use_frameworks!
+inhibit_all_warnings!
+
+target 'SafeGridProject' do
+
+pod 'Masonry'
+pod 'SDWebImage'
+pod 'MBProgressHUD'
+pod 'MJExtension'
+pod 'MJRefresh'
+pod 'FMDB'
+pod 'FMDBMigrationManager'
+pod 'IQKeyboardManager'
+pod 'YTKNetwork'
+pod 'SAMKeychain'
+pod 'DZNEmptyDataSet'
+pod 'TZImagePickerController'
+
+end

@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="SGPickerAlertView">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="c8T-Vk-7Pb">
+                    <rect key="frame" x="0.0" y="667" width="375" height="320"/>
+                    <subviews>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="mqp-ad-GaP">
+                            <rect key="frame" x="0.0" y="50" width="375" height="220"/>
+                            <subviews>
+                                <pickerView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="LrX-Zt-x6E">
+                                    <rect key="frame" x="0.0" y="0.0" width="375" height="220"/>
+                                </pickerView>
+                            </subviews>
+                            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <constraints>
+                                <constraint firstItem="LrX-Zt-x6E" firstAttribute="leading" secondItem="mqp-ad-GaP" secondAttribute="leading" id="12C-xn-P0u"/>
+                                <constraint firstItem="LrX-Zt-x6E" firstAttribute="top" secondItem="mqp-ad-GaP" secondAttribute="top" id="9yU-u8-qQY"/>
+                                <constraint firstAttribute="bottom" secondItem="LrX-Zt-x6E" secondAttribute="bottom" id="ABr-eP-JpM"/>
+                                <constraint firstAttribute="trailing" secondItem="LrX-Zt-x6E" secondAttribute="trailing" id="tkd-oX-x32"/>
+                            </constraints>
+                        </view>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="BaZ-PS-8Uu">
+                            <rect key="frame" x="0.0" y="0.0" width="375" height="50"/>
+                            <subviews>
+                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="DgX-RG-NvI">
+                                    <rect key="frame" x="30" y="9" width="33" height="32"/>
+                                    <fontDescription key="fontDescription" type="boldSystem" pointSize="16"/>
+                                    <state key="normal" title="取消">
+                                        <color key="titleColor" red="0.23137254901960785" green="0.34901960784313724" blue="0.59607843137254901" alpha="1" colorSpace="custom" customColorSpace="calibratedRGB"/>
+                                    </state>
+                                    <connections>
+                                        <action selector="leftAction:" destination="iN0-l3-epB" eventType="touchUpInside" id="Oe4-M4-oHu"/>
+                                    </connections>
+                                </button>
+                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="iZu-jy-BIr">
+                                    <rect key="frame" x="312" y="9" width="33" height="32"/>
+                                    <fontDescription key="fontDescription" type="boldSystem" pointSize="16"/>
+                                    <state key="normal" title="确定">
+                                        <color key="titleColor" red="0.8980392157" green="0.2784313725" blue="0.23529411759999999" alpha="1" colorSpace="calibratedRGB"/>
+                                    </state>
+                                    <connections>
+                                        <action selector="rightAction:" destination="iN0-l3-epB" eventType="touchUpInside" id="3rq-bN-K1h"/>
+                                    </connections>
+                                </button>
+                            </subviews>
+                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <constraints>
+                                <constraint firstItem="iZu-jy-BIr" firstAttribute="centerY" secondItem="BaZ-PS-8Uu" secondAttribute="centerY" id="Gr0-H7-Jp3"/>
+                                <constraint firstItem="DgX-RG-NvI" firstAttribute="centerY" secondItem="BaZ-PS-8Uu" secondAttribute="centerY" id="NLz-Qn-UvV"/>
+                                <constraint firstItem="DgX-RG-NvI" firstAttribute="leading" secondItem="BaZ-PS-8Uu" secondAttribute="leading" constant="30" id="oF0-eN-F9v"/>
+                                <constraint firstAttribute="trailing" secondItem="iZu-jy-BIr" secondAttribute="trailing" constant="30" id="xSf-df-qcI"/>
+                            </constraints>
+                        </view>
+                    </subviews>
+                    <color key="backgroundColor" red="0.97647058823529409" green="0.97647058823529409" blue="0.97647058823529409" alpha="1" colorSpace="calibratedRGB"/>
+                    <constraints>
+                        <constraint firstItem="BaZ-PS-8Uu" firstAttribute="leading" secondItem="c8T-Vk-7Pb" secondAttribute="leading" id="1b8-zl-RaU"/>
+                        <constraint firstItem="BaZ-PS-8Uu" firstAttribute="top" secondItem="c8T-Vk-7Pb" secondAttribute="top" id="CQc-yy-n61"/>
+                        <constraint firstAttribute="bottom" secondItem="mqp-ad-GaP" secondAttribute="bottom" constant="50" id="Rew-CS-8AG"/>
+                        <constraint firstItem="mqp-ad-GaP" firstAttribute="leading" secondItem="c8T-Vk-7Pb" secondAttribute="leading" id="T78-7g-1dS"/>
+                        <constraint firstAttribute="trailing" secondItem="mqp-ad-GaP" secondAttribute="trailing" id="YnH-td-yWG"/>
+                        <constraint firstAttribute="trailing" secondItem="BaZ-PS-8Uu" secondAttribute="trailing" id="m6L-xi-Vlk"/>
+                        <constraint firstAttribute="height" constant="320" id="o22-Mp-9Go"/>
+                        <constraint firstItem="mqp-ad-GaP" firstAttribute="top" secondItem="BaZ-PS-8Uu" secondAttribute="bottom" id="owC-6a-x7V"/>
+                        <constraint firstItem="mqp-ad-GaP" firstAttribute="top" secondItem="c8T-Vk-7Pb" secondAttribute="top" constant="50" id="paJ-71-RG8"/>
+                    </constraints>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="number" keyPath="zycCornerRadius">
+                            <real key="value" value="20"/>
+                        </userDefinedRuntimeAttribute>
+                    </userDefinedRuntimeAttributes>
+                </view>
+            </subviews>
+            <color key="backgroundColor" white="0.0" alpha="0.40000000000000002" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <constraints>
+                <constraint firstItem="c8T-Vk-7Pb" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="90e-MT-SdK"/>
+                <constraint firstAttribute="trailing" secondItem="c8T-Vk-7Pb" secondAttribute="trailing" id="lRk-ST-wgf"/>
+                <constraint firstAttribute="bottom" secondItem="c8T-Vk-7Pb" secondAttribute="bottom" constant="-320" id="mBK-9s-PzY"/>
+            </constraints>
+            <connections>
+                <outlet property="bottomConstraint" destination="mBK-9s-PzY" id="WCF-Z1-sii"/>
+                <outlet property="containerV" destination="c8T-Vk-7Pb" id="5su-Ju-VX0"/>
+                <outlet property="pickerView" destination="LrX-Zt-x6E" id="dKG-lt-qLX"/>
+            </connections>
+            <point key="canvasLocation" x="39.200000000000003" y="46.326836581709152"/>
+        </view>
+    </objects>
+</document>
